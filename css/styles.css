@@ -665,7 +665,8 @@
 
                 .details {
                     flex-direction: row;
-                    justify-content: space-between;
+                    justify-content: flex-start;
+                    gap: 80px;
 
                     .description {
                         text-align: left;
@@ -692,7 +693,8 @@
 
         .about-me .details .bottom .about .details{
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
+            gap: 80px;
             align-items: center;
 
             .img {
