@@ -516,11 +516,14 @@
 
                     .cta {
                         width: 100%;
-                        gap: 32px;
+                        flex-direction: column;
+                        gap: 24px;
                         justify-content: center;
                         margin-bottom: 32px;
 
                         a {
+                            width: 100%;
+                            justify-content: center;
                             .left-icon {
                                 width: 20px;
                                 height: 20px;
@@ -549,10 +552,13 @@
                         .socials-list {
                             margin-top: 16px;
                             width: 100%;
-                            flex-wrap: wrap;
+                            flex-direction: column;
                             justify-content: center;
+                            gap: 16px;
 
                             a {
+                                width: 100%;
+                                justify-content: center;
                                 .left-icon {
                                     width: 16px;
                                     height: 16px;
@@ -681,6 +687,32 @@
             justify-items: flex-start;
             gap: 48px;
             align-items: center;
+        }
+
+        .footers .details {
+            .contact {
+                .bottom {
+                    .cta {
+                        flex-direction: row;
+                        width: 100%;
+
+                        a {
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
+
+            .socials {
+                .socials-list {
+                    flex-direction: row;
+                    width: 100%;
+
+                    a {
+                        width: fit-content;
+                    }
+                }
+            }
         }
     }
 }
